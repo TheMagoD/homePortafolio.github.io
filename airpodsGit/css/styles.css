@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} *, *:before, *:after {
+    box-sizing: inherit;
+}
+:root {
+    --primaryColor: #C9D9C5;
+    --primaryColor-botton: #25ec6b;
+    --secundaryColor-botton: #2acf64;
+}
+  
+h3 {
+    margin-bottom: 1rem;
+}
+p {
+    margin-bottom: 1rem;
+    align-self: center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto",sans-serif;
+    background-color: var(--primaryColor);
+}
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 25rem;
+}
+.container img {
+    object-fit: contain;
+}
+.card {
+    width: 100%;
+    margin: 20px;
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    text-align: justify;
+    line-height: 1.2;
+}
+.contenido p {
+    font-size: 13px;
+}
+.card img {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 3rem;
+}
+.opt-select {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+select {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+}
+.container-price {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    height: 2.5rem;
+    border-top: 2px solid var(--primaryColor);
+}
+.container-price button {
+    background:  linear-gradient(to right, var(--primaryColor-botton), yellow);
+    border: 0;
+    border-radius: 3px;
+    grid-column: 2;
+} .container-price button:hover {
+    background-color: var(--secundaryColor-botton);
+    color: white;
+    cursor: pointer;
+} .container-price p {
+    margin: 0;
+    align-self: center;
+    font-size: 1.5rem;
+    grid-column: 1;
+}
